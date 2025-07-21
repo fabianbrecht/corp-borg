@@ -1,0 +1,65 @@
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+        "name": "Unnamed Cororat",
+        "health": {
+          "current": 3,
+          "max": 3
+        },
+        "biography": ""
+      }
+    },
+    "character": {
+      "templates": ["base"],
+      "role": "Intern",
+      "undos": {
+        "value": 0
+      },
+      "abilities": {
+        "soft_skills": {
+          "value": 10
+        },
+        "hard_skills": {
+          "value": 10
+        },
+        "flexibility": {
+          "value": 10
+        },
+        "integrity": {
+          "value": 10
+        },
+        "knowledge": {
+          "value": 10
+        }
+      }
+    },
+    "npc": {
+      "templates": ["base"],
+      "cr": 0
+    }
+  },
+  "Item": {
+    "types": ["equipment", "suit", "weapons"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "equipment": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    },
+    "suit": {
+      "templates": ["base"],
+      "formula": ""
+    },
+    "weapons": {
+      "templates": ["base"],
+      "formula": ""
+    }
+  }
+}
